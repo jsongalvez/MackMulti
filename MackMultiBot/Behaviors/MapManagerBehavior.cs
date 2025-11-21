@@ -44,7 +44,7 @@ namespace MackMultiBot.Behaviors
 		{
 			var ruleConfig = commandContext.Lobby?.LobbyConfiguration.RuleConfig;
 
-			if (ruleConfig == null)
+            if (ruleConfig.LimitDifficulty == false && ruleConfig.LimitMapLength == false)
 			{
 				commandContext.Reply("This lobby has no rule configuration set up.");
 				return;
