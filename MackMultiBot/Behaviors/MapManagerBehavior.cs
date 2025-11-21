@@ -65,7 +65,7 @@ namespace MackMultiBot.Behaviors
 		{
 			int mapsetId = Data.BeatmapInfo.SetId;
 
-			commandContext.Reply($"[https://beatconnect.io/b/{mapsetId} BeatConnect] | [https://osu.direct/d/{mapsetId} osu.direct] | [https://catboy.best/d/{mapsetId} catboy.best]");
+			commandContext.Reply($"[https://osu.ppy.sh/beatmapsets/{mapsetId}/download osu!] | [https://beatconnect.io/b/{mapsetId} BeatConnect] | [https://dl.sayobot.cn/beatmaps/download/full/{mapsetId} Sayobot] | [https://api.nerinyan.moe/d/{mapsetId} Nerinyan] | [https://catboy.best/d/{mapsetId} Mino]");
 		}
 
 		[BotEvent(BotEventType.Command, "overriderules")]
